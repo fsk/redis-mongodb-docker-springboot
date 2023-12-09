@@ -1,0 +1,27 @@
+#SERVER-CFG
+server:
+  port: 8282
+
+#MONGO-CFG
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 1905
+      database: blog-post-content
+
+  #REDIS-CFG
+  redis:
+    host: localhost
+    port: 1923
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
+
+
